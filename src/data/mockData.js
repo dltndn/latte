@@ -1,0 +1,32 @@
+export const mockPlayer = [
+  {
+    id: 1,
+    name: "홍길동",
+    tier: "bronze",
+    scheduleDate: [1, 5, 6, 12],
+    learderBoardCount: { first: 0, second: 0, third: 0 },
+    currentPoint : 0,
+    currentWin : 0,
+    currentLose : 0,
+  },
+  {
+    id: 2,
+    name: "김나팔",
+    tier: "bronze",
+    scheduleDate: [1, 3, 6, 13],
+    learderBoardCount: { first: 0, second: 0, third: 0 },
+    currentPoint : 0,
+    currentWin : 0,
+    currentLose : 0,
+  },
+  {
+    id: 3,
+    name: "박아재",
+    tier: "bronze",
+    scheduleDate: [2, 4, 6, 10],
+    learderBoardCount: { first: 0, second: 0, third: 0 },
+    currentPoint : 0,
+    currentWin : 0,
+    currentLose : 0,
+  },
+];
