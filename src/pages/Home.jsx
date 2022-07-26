@@ -8,4 +8,10 @@ const Home = () => {
 }
 
 
+//input data
+//승점 상위 3인 승점 data
+
+// 승점 상위 3인 노출
+
+
 export default Home;
