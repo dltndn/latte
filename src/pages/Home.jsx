@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Home = () => {
-    return(<Test>홈</Test>);
+    return(<div>
+        <div>리더보드</div>
+        <div>로그인창</div>
+    </div>);
 }
 
-const Test = styled.div`
-    font-size: 40px;
-`
+
 export default Home;
