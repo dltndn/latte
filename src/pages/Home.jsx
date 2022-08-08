@@ -1,13 +1,23 @@
 import styled from "styled-components";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+
+    const [viewLoginBox, setViewLoginBox] = useState(true);
+
     return(<div>
         <Page>
-            <div>요약리더보드</div>
-            <div>로그인창</div>
+            <LeaderboardSummary>요약리더보드</LeaderboardSummary>
+            <div>
+                { viewLoginBox ? <LogInBox/> : <EnterButton />}
+            </div>
         </Page>
     </div>);
 }
+
+const EnterButton = styled.div`
+    
+`;
 
 //로그인 창 css
 const LogInBox = styled.div`
