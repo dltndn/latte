@@ -1,16 +1,17 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import LogInBox from "../components/LogInBox";
 
 const Home = () => {
   const [viewLoginBox, setViewLoginBox] = useState(false);
+  const navigate = useNavigate();
 
-//   useEffect(() => {
-//     console.log("useeffect")
-//   }, []  );
 
   const getLogInBox = () => {
     setViewLoginBox(true);
   }
+
 
   return (
     <div>
@@ -22,7 +23,7 @@ const Home = () => {
           ) : (
             <div>
               <LogInBtn onClick={getLogInBox}>로그인하기</LogInBtn>
-              <GuestBtn>둘러보기</GuestBtn>
+              <GuestBtn onClick={()=> navigate(`/LeaderBoard/guest`)}>둘러보기</GuestBtn>
             </div>
           )}
         </div>
@@ -37,8 +38,7 @@ const GuestBtn = styled.button``;
 
 const EnterButton = styled.div``;
 
-//로그인 창 css
-const LogInBox = styled.div``;
+
 
 const LeaderboardSummary = styled.div``;
 
