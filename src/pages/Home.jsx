@@ -23,7 +23,7 @@ const Home = () => {
           ) : (
             <div>
               <LogInBtn onClick={getLogInBox}>로그인하기</LogInBtn>
-              <GuestBtn onClick={()=> navigate(`/LeaderBoard/guest`)}>둘러보기</GuestBtn>
+              <GuestBtn onClick={()=> navigate(`/LeaderBoard`)}>둘러보기</GuestBtn>
             </div>
           )}
         </div>

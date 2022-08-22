@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
+import LeaderBoardBox from "../components/LeaderBoardBox";
 
 const LeaderBoard = () => {
 
     return(<div>  
-        <div>리더보드 상세페이지</div>
+        <LeaderBoardBox></LeaderBoardBox>
     </div>);
 }
 
